@@ -1,0 +1,21 @@
+Menu of the restaurant
+
+1. Patatas Bravas 
+Description: Crispy fried potatoes topped with a spicy tomato sauce and a creamy garlic aioli. 
+Ingredients: Potatoes, tomato sauce, garlic, olive oil, mayonnaise, paprika.
+
+2. Paella de Mariscos 
+Description: A traditional Spanish rice dish filled with a variety of fresh seafood. 
+Ingredients: Rice, shrimp, mussels, clams, squid, saffron, garlic, olive oil, bell peppers, tomatoes.
+
+3. Gazpacho Andaluz 
+Description: A refreshing cold tomato soup perfect for a hot day. 
+Ingredients: Tomatoes, cucumbers, bell peppers, onions, garlic, olive oil, vinegar, salt.
+
+4. Churros con Chocolate 
+Description: Fried dough pastries dusted with sugar and served with a rich chocolate dipping sauce. 
+Ingredients: Flour, water, sugar, cinnamon, dark chocolate, milk.
+
+5. Tortilla Española 
+Description: A classic Spanish omelette made with potatoes and onions. 
+Ingredients: Eggs, potatoes, onions, olive oil, salt.
