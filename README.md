@@ -10,8 +10,9 @@ This project explores the process of building a chatbot based on AI models and R
 2. [Features](#features)
 3. [Usage](#usage)
 4. [Learning Objectives](#learning-objectives)
-5. [License](#license)
-6. [Acknowledgments](#acknowledgments)
+5. [Architecture](#architecture)
+6. [License](#license)
+7. [Acknowledgments](#acknowledgments)
 
 ## Introduction
 This project explores how to create a chatbot utilizing AI models and RAG systems. The chatbot is designed to provide accurate and contextually relevant responses by combining the strengths of AI language models and efficient data retrieval mechanisms.
@@ -32,6 +33,20 @@ The primary goal of this project is to provide hands-on experience in the follow
 - Using Ollama for managing large language models.
 - Managing Python environments with `uv`.
 - Utilizing Qdrant as a vector database for efficient data retrieval.
+
+## Architecture
+
+The architecture of this chatbot exploration project integrates several key components to ensure efficient processing and accurate responses. Below is an overview of the main components and their interactions:
+
+- **Client:** The frontend interface where users interact with the chatbot.
+- **Guard Agent:** Determines if the user prompt is valid.
+- **Classifier Agent:** Classifies the user prompt to execute the Order Agent or the Information/Details Agent.
+- **Order Agent & Information/Details Agent:** Use the large language model served through the Ollama API.
+- **Vector Database (Qdrant):** The Details Agent utilizes this database to retrieve relevant information.
+
+### Diagram
+
+![Chatbot arquitecture](images/chatbot_architecture.png)
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
