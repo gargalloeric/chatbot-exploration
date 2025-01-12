@@ -18,7 +18,7 @@ def get_chatbot_response(session: requests.Session , model_name: str, messages, 
             "stream": False
         })
     )
-    return response.json()["message"]["content"]
+    return response.json()
 
 def get_embedding(session: requests.Session, model_name: str, text_input):
     response = session.post(
