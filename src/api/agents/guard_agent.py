@@ -43,6 +43,5 @@ class GuardAgent(AgentInterface):
             self.model_name,
             input_messages
         )
-        print(response["message"]["content"])
         output = json.loads(response["message"]["content"])
         return output
