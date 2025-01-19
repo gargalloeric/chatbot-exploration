@@ -12,7 +12,8 @@ class GuardAgent(AgentInterface):
 
     def get_response(self, messages: List[Dict[str, Any]]) -> Dict[str, Any]:
         system_prompt = """
-        You are a helpful AI assistant for a small restaurant application that serves food. Your task is to determine whether the user is asking something relevant to the restaurant or not. 
+        You are a helpful AI assistant for a small restaurant application that serves food. 
+        Your task is to determine whether the user is asking something relevant to the restaurant or not.
 
         The user is allowed to:
         1. Ask questions directly related to the restaurant, such as menu items and restaurant-specific questions.
@@ -24,19 +25,15 @@ class GuardAgent(AgentInterface):
         2. Inquire about the staff, the owner or how to prepare the menu items.
         3. Ask questions regarding the restaurant's physical infrastructure or similar topics.
 
-        Your output must strictly follow this structured JSON format. You are not allowed to write anything else other than the structured JSON format:
+        Your output must strictly follow the bellow JSON format. You are not allowed to write anything else other than the structured JSON format:
         {
-            "chain_of_thought": [
-                "Step-by-step analysis of whether the user prompt aligns with the allowed questions. List each thought process in a string format.",
-                "Another step of thought process.",
-                "And so on."
-            ],
-            "allowed": true or false,
-            "message": Leave this property empty if allowed; otherwise, provide the reason why it is not allowed.
+            "chain_of_thought": Go through each of the points above and analyze if the user message lies under one of the points or not. Then write your thoughts about what points is the user message relevant to,
+            "allowed": Go through the chain_of_thought points and use that to allow the user message `true` or not `false`,
+            "message": Leave this property empty if allowed; otherwise, provide the reason why it is not allowed
         }
         """
 
-        input_messages = [{"role": "system", "content": system_prompt}] + messages[-1:]
+        input_messages = [{"role": "system", "content": system_prompt}] + messages[-3:]
 
         response = get_chatbot_response(
             self.session,
