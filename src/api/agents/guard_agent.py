@@ -30,7 +30,7 @@ class GuardAgent(AgentInterface):
         2. You must ensure it's a valid JSON output.
         3. You are not allowed to write escape characters for single quoted strings in the JSON output.
         4. You are not alloed to write anithing else but the JSON format bellow.
-        4. You must ensure the output follows the JSON structured shown bellow.
+        5. You must ensure the output follows the JSON structured shown bellow.
 
         {
             "chain_of_thought": Go through each of the points above and analyze if the user message lies under one of the points or not. Then write your thoughts about what points is the user message relevant to,
