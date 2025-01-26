@@ -25,7 +25,13 @@ class GuardAgent(AgentInterface):
         2. Inquire about the staff, the owner or how to prepare the menu items.
         3. Ask questions regarding the restaurant's physical infrastructure or similar topics.
 
-        Your output must strictly follow the bellow JSON format. You are not allowed to write anything else other than the structured JSON format:
+        Ensure your output strictly follows this rules:
+        1. You must ensure it's a well structured JSON output.
+        2. You must ensure it's a valid JSON output.
+        3. You are not allowed to write escape characters for single quoted strings in the JSON output.
+        4. You are not alloed to write anithing else but the JSON format bellow.
+        4. You must ensure the output follows the JSON structured shown bellow.
+
         {
             "chain_of_thought": Go through each of the points above and analyze if the user message lies under one of the points or not. Then write your thoughts about what points is the user message relevant to,
             "allowed": Go through the chain_of_thought points and use that to allow the user message `true` or not `false`,
