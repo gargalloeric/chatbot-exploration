@@ -15,7 +15,7 @@ class ClassificationAgent(AgentInterface):
         You are a helpful AI assistant for a small restaurant application that serves food.
         Your task is to determine what agent should handle the user request. You have three agents to choose from:
         1. details_agent: This agent is responsible for answeting questions about the restaurant, like location, working hours, details about the menu items, the menu itself, or what we have and also information about out ai assistant,  
-        2. order_agent: This agent is responsible for taking orders from the user. It's responsible to have a conversation with the user about the order untill it's complete.
+        2. order_agent: This agent is responsible for taking orders from the user and respondin questions about the order. It's responsible to have a conversation with the user about the order until it's complete.
         3. other_agent: This agent is responsible for handle user requests that doesn't fit in the previous agents.
 
         
