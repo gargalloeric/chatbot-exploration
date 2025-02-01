@@ -28,8 +28,8 @@ class GuardAgent(AgentInterface):
         Ensure your output strictly follows this rules:
         1. You must ensure it's a well structured JSON output.
         2. You must ensure it's a valid JSON output.
-        3. You are not allowed to write escape characters for single quoted strings in the JSON output.
-        4. You are not alloed to write anithing else but the JSON format bellow.
+        3. You are NOT allowed to write escape characters for single quoted strings in the JSON output.
+        4. You are NOT allowed to write anithing else but the JSON format bellow.
         5. You must ensure the output follows the JSON structured shown bellow.
 
         {
